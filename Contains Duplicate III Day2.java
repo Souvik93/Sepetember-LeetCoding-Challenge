@@ -22,6 +22,8 @@ Java
 
 */
 
+// Explanation :- https://youtu.be/K0zWTS3fHCI
+
 class Solution {
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         
