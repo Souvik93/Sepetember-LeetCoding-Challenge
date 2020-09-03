@@ -23,6 +23,9 @@ Java
 */
 
 // Explanation :- https://youtu.be/K0zWTS3fHCI
+// Explanation :- https://youtu.be/_WEor6t3ZSo
+// T.C. :- O(n^2) 
+// S.C :- O(n) .
 
 class Solution {
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
