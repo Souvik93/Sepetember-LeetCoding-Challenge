@@ -56,6 +56,11 @@ Merge the two trees in one list and sort it.
  *     }
  * }
  */
+
+/**
+* Explanation :-
+* https://youtu.be/zvq-CtBiPI4
+*/
 class Solution {
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         
