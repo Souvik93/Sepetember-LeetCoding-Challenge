@@ -26,25 +26,68 @@ Constraints:
 
 */
 class Solution {
-    
-    // 2  1  1  2
-    public int rob(int[] nums) {
+    public int rob(int[] nums) { 
+        // 1st Approach Dyanmic Programming, Time Complexity :- O(n) , Space Complexity :- O(n)
         
-        int oddMax=0;
-        int evenMax=0;
-        
-        for(int i=0;i<nums.length;i=i+1) {
-            if (i%2==0) {
-               evenMax= evenMax+nums[i];
-               evenMax= Math.max(evenMax,oddMax); 
-            } else {
-                oddMax= oddMax+nums[i];
-            oddMax= Math.max(oddMax,evenMax);    
-            }
-            
+       /* if(nums==null || nums.length==0) {
+            return 0;
         }
         
-        return Math.max(oddMax,evenMax);
+        int sum[] = new int[nums.length];
+        
+        
+        sum[0] = nums[0];
+        if(nums.length>1) {
+            sum[1] = Math.max(nums[0],nums[1]);    
+        }
+        
+        
+        for(int i=2;i<nums.length;i++) {
+            sum[i] = Math.max(sum[i-1],sum[i-2]+nums[i]);
+        }
+        
+        return sum[sum.length-1]; */
+        
+        // 2nd Approach Odd Even Index, Time Complexity :- O(n) , Space Complexity :- O(1)
+        
+        /* int oddSum=0;
+        int evenSum =0;
+        
+        for(int i=0;i<nums.length;i++) {
+            
+            if(i%2==0) {
+                evenSum += nums[i];
+                
+                evenSum = Math.max(evenSum,oddSum);
+            } else {
+                oddSum +=nums[i];
+                
+                oddSum = Math.max(oddSum,evenSum);
+            }
+            
+            
+            
+        }
+
+        return Math.max(oddSum,evenSum); */
+        
+        // 3rd Approach Dynamic Programming Without Extra Spaces , Time Complexity :- O(n) , Space Complexity :- O(1)
+        if(nums==null || nums.length==0) {
+            return 0;
+        }
+        
+        
+        if(nums.length>1) {
+            nums[1] = Math.max(nums[0],nums[1]);    
+        }
+        
+        
+        for(int i=2;i<nums.length;i++) {
+            nums[i] = Math.max(nums[i-1],nums[i-2]+nums[i]);
+        }
+        
+        return nums[nums.length-1];
+        
         
     }
 }   
