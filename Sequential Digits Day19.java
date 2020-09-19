@@ -24,12 +24,15 @@ Generate all numbers with sequential digits and check if they are in the given r
 Fix the starting digit then do a recursion that tries to append all valid digits.
 
 */
+
+// Explanation :- https://youtu.be/aEu6EY5anS4
+
 class Solution {
     public List<Integer> sequentialDigits(int low, int high) {
         
         List<Integer> list = new ArrayList<>();
         
-        for(int i=1;i<10;i++) {
+        for(int i=1;i<9;i++) {
             
             int next = 0;
             
