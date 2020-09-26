@@ -27,6 +27,10 @@ Note:
 
 You may assume the length of given time series array won't exceed 10000.
 You may assume the numbers in the Teemo's attacking time series and his poisoning time duration per attacking are non-negative integers, which won't exceed 10,000,000.*/
+
+/*
+Explanation :- https://youtu.be/PccJd3ScoK0
+*/
 class Solution {
     public int findPoisonedDuration(int[] timeSeries, int duration) {
         int start = 0;
