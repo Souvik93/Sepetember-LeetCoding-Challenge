@@ -37,6 +37,13 @@ equations[i][0], equations[i][1], queries[i][0], queries[i][1] consist of lower 
    Hide Hint #1  
 Do you recognize this as a graph problem?
 */
+
+/*
+ 1. Build Graph.
+ 2. Traverse The Created Using DFS.
+ Explanation : - https://youtu.be/yhEUwt6bdyY
+*/
+
 class Solution {
     
     
