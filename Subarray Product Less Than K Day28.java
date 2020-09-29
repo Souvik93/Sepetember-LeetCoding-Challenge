@@ -16,6 +16,9 @@ Note:
    Hide Hint #1  
 For each j, let opt(j) be the smallest i so that nums[i] * nums[i+1] * ... * nums[j] is less than k. opt is an increasing function.
 */
+
+// Explanation :- https://youtu.be/TPLyxS19qKg
+
 class Solution {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         int begin = 0, end = 0, product = 1, ans = 0;
