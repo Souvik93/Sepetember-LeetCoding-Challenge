@@ -26,6 +26,8 @@ We don't care about duplicates or non-positive integers
 Remember that O(2n) = O(n)
 */
 
+// Explanation :- https://youtu.be/e3Q-BfptyT4
+
 class Solution {
     public int firstMissingPositive(int[] nums) {
         
